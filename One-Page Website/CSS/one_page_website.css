@@ -1,0 +1,12 @@
+html {
+    font-family: cursive;
+    font-size: 62.5%;
+}
+
+input {
+    width: 150px;
+    margin: 95px;
+    border-style: dotted;
+    border-radius: 50px;
+    
+}
