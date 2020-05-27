@@ -26,59 +26,74 @@
 	</header>
 	<body>
 		
-		<!-- HOME -->
-			<div id ="home">
-				<div>
-					<div>
-						<span> Noodles Game Time</span>
-					</div>
-				</div>
-			</div>
-		<!-- END HOME -->
-		
-		<!-- GALLERY -->
-		<section>
-				<div id="gallery">
-					<h1>Gallery</h1>
-					<div>
-					
-						<!-- PHOTO-CONTAINER 1 -->
-							<div>
-								<div>
-									<img src="https://cdn.pixabay.com/photo/2017/11/08/22/18/spaghetti-2931846_960_720.jpg" alt="Noodles">
-									<div>
-										<em>Noodles</em>
-									</div>
-								</div>
-							</div
-						<!-- END PHOTO-CONTAINER 1 -->
-						
-						<!-- PHOTO-CONTAINER 2 -->
-							<div>
-								<div>
-									<img src="https://cdn.pixabay.com/photo/2017/03/16/20/39/noodles-2150181_960_720.jpg" alt="Noodle Nest">
-									<div>
-										<em>Noodle Nest</em>
-									</div>
-								</div>
-							</div
-						<!-- END PHOTO-CONTAINER 2 -->
-						
-						<!-- PHOTO-CONTAINER 3 -->
-							<div>
-								<div>
-									<img src="https://cdn.pixabay.com/photo/2016/08/30/20/20/noodles-1631935_960_720.jpg" alt="Standing Noodles">
-									<div>
-										<em>Standing Noodles </em>
-									</div>
-								</div>
-							</div
-						<!-- END PHOTO-CONTAINER 3 -->
-						
-					</div>
-				</div>
-		</section>
-		<!-- END GALLERY -->
+		<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="./Images/1.jpg" style="width:50%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/2.jpg" style="width:50%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/3.jpg" style="width:50%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/4.jpg" style="width:50%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="./Images/1.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="./Images/2.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="./Images/3.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="./Images/4.jpg" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./Images/1.jpg" style="width:25%" onclick="currentSlide(1)" alt="Beer">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Images/2.jpg" style="width:25%" onclick="currentSlide(2)" alt="Beer More">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Images/3.jpg" style="width:25%" onclick="currentSlide(3)" alt="More Beer">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Images/4.jpg" style="width:25%" onclick="currentSlide(4)" alt="Hey Even More Beer">
+	  </div>
+	</div>
+  </div>
 		
 		<!-- VIDEO -->
 		<section>
@@ -123,6 +138,8 @@
 			</div>
 		<section>
 		<!-- END RSVOP -->
+
+		<script src="./JS/one_page_website.js"></script>
 	</body>
 	
 	<footer>
